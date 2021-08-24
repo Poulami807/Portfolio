@@ -1,0 +1,139 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    background-color: rgb(32, 32, 32);
+
+}
+.navbar-brand{
+    font-family:'Playfair Display', serif;
+    font-style: italic;
+}
+.nav-item{
+    padding: 0 1em !important;
+}
+main{
+    background-color:#303233;
+    padding: 0 !important;
+}
+/*section headings */
+h2{
+    text-align: center;
+}
+.landing-pg{
+    width: 100%;
+    height: 100vh;
+    font-size:x-large;
+    background-color: rgb(32, 32, 32);
+
+}
+.intro{
+    width: 50%;
+    margin-left: 4em !important ;
+}
+    
+.image{
+    width:50%;
+    text-align: center;
+}
+.about,.services,.skills,.portfolio,.contact{
+    text-align: justify;
+    margin: 2em 0 !important;
+
+}
+
+.service{
+    background-color: rgb(32, 32, 32);
+    margin: 0 0.5em;
+    padding-bottom:1em;
+
+}
+.service-heading{
+    text-align: center;
+}
+.service-icon{
+    width: 100%;
+    margin:1em 0;
+    display:flex;
+    justify-content:center;
+    
+}
+.bars{
+    width: 30vw;
+}
+.skill-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.skill{
+    width:100%;
+    height: 15px;
+    margin: 0.5em 0;
+    background-color: rgb(32, 32, 32);
+    border-radius: 5px;
+    position: relative;
+
+}
+.skills .bars .skill::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color:lightgrey;
+} 
+.skills .bars  .html::before{
+   width: 90%;
+}
+.skills .bars  .css::before{
+    width: 80%;
+ }
+ .skills .bars  .js::before{
+    width: 20%;
+ }
+ .skills .bars  .bootstrap::before{
+    width: 50%;
+ }
+ .skills .bars  .python::before{
+    width: 90%;
+ }
+ .skills .bars  .ml::before{
+    width: 70%;
+ }
+ 
+ .portfolio .row .card-body{
+    background-color: rgb(32, 32, 32);
+ }
+ .portfolio .card{
+     border: none;
+ }
+ 
+.portfolio .card .card-body .btn:hover{
+    background-color: grey !important;
+    border: none !important;
+}
+.footer-container,.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width:640px){
+    
+    .image{
+        display: none;
+    }
+    .landing-pg{
+        padding: 0 1.5em;
+    }
+    .intro{
+        width: 100%;
+        font-size: smaller;
+        margin-left:0 !important;
+        padding-left: 0 !important;
+        align-self:center;
+        position: relative;
+        top: -2em;
+    }
+}
